@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./FoodGuide.module.scss";
-import bg from "../../Assets/bg1.png";
+import bg from "../Assets/bg1.png";
 import { GiAppleSeeds, GiShinyApple, GiWheat, GiCarrot } from "react-icons/gi";
 
 const data = [

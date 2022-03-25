@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./TopChefs.module.scss";
-import bg from "../../Assets/image0.png";
-import img1 from "../../Assets/image1.png";
-import img2 from "../../Assets/image2.png";
-import img3 from "../../Assets/image3.png";
+import bg from "../Assets/image0.png";
+import img1 from "../Assets/image1.png";
+import img2 from "../Assets/image2.png";
+import img3 from "../Assets/image3.png";
 
 const data = [
   {

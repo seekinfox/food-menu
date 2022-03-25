@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./Varieties.module.scss";
 import { AiOutlineStar } from "react-icons/ai";
-import img1 from "../../Assets/Bitmap1.png";
-import img2 from "../../Assets/Bitmap2.png";
-import img3 from "../../Assets/Bitmap3.png";
-import img4 from "../../Assets/Bitmap4.png";
-import img5 from "../../Assets/Bitmap5.png";
+import img1 from "../Assets/Bitmap1.png";
+import img2 from "../Assets/Bitmap2.png";
+import img3 from "../Assets/Bitmap3.png";
+import img4 from "../Assets/Bitmap4.png";
+import img5 from "../Assets/Bitmap5.png";
 import { BiChevronRight } from "react-icons/bi";
 
 const data = [

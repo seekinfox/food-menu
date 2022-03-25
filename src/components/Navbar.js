@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../Assets/CompanyLogo.png";
+import logo from "../Assets/CompanyLogo.png";
 import { GiKnifeFork } from "react-icons/gi";
 import style from "./Navbar.module.scss";
 
