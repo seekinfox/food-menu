@@ -1,0 +1,64 @@
+@use "../Styles/mixins" as m;
+
+.fg__container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-size: cover;
+  padding: 3rem 2rem;
+  > h2 {
+    align-self: center;
+    margin-bottom: auto;
+    border: 1px solid red($color: #000000);
+    width: max-content;
+    line-height: 2.5;
+    position: relative;
+    opacity: .7;
+    margin-bottom: 2rem;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 30%;
+      content: "";
+      width: 40%;
+      height: .5rem;
+      background: black;
+    }
+  }
+}
+.fg__inner_container {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  text-align: center;
+  gap: 3rem;
+  @include m.desktop {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8rem 45%;
+  }
+}
+.fg__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  > div {
+    font-size: 1.5rem;
+    background-color: #342679B2;
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  > h4 {
+    line-height:3;
+    font-size: .8rem;
+  }
+  > p {
+    font-size:.7rem;
+  }
+}

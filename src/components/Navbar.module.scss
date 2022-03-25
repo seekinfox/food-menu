@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding: 1rem;
+  border-bottom: 1px solid gray;
+
+  > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > svg {
+      font-size: 1.3rem;
+      color: #FEB143;
+    }
+
+    > img {
+      margin-left: .5rem;
+      width: 55%;
+    }
+  }
+}

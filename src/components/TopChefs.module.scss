@@ -1,0 +1,76 @@
+@use "../Styles/mixins" as m;
+ 
+.tc__container {
+  display: flex;
+  flex-direction: column;
+  > h2 {
+    align-self: center;
+    border: 1px solid red($color: #000000);
+    width: max-content;
+    line-height: 2.5;
+    position: relative;
+    opacity: .7;
+    margin-bottom: 2rem;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 30%;
+      content: "";
+      width: 40%;
+      height: .5rem;
+      background: black;
+    }
+  }
+}
+.tc__inner_container {
+  display: flex;
+  flex-direction: column;
+  min-height: 65vh;
+  background-size: cover;
+  padding: 3rem 1rem;
+  
+  @include m.desktop {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.tc__card {
+  height: 20rem;
+  flex-basis: 25%;
+  margin: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  color: white;
+  text-align: center;
+  transition: .3s ease;
+  margin-bottom: 3rem;
+  @include m.desktop {
+    margin-bottom: 0;
+  }
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+  > div {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    > img {
+      width: 100%;
+    }
+  }
+  > h4 {
+    font-weight: bolder;
+    line-height: 2.5;
+  }
+  p > {
+    font-size: .9rem;
+  }
+}
